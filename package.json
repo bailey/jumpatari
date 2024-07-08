@@ -9,11 +9,11 @@
     "react-device-detect": "^1.17.0",
     "react-dom": "^18.0.0-alpha-ed6c091fe-20210701",
     "react-scripts": "4.0.3",
-    "three": "^0.129.0",
+    "three": "^0.134.0", 
     "zustand": "^3.5.2"
   },
   "scripts": {
-    "start": "HOST=0.0.0.0 react-scripts start",
+    "start": "HOST=0.0.0.0 react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
