@@ -100,10 +100,10 @@ export default function Hud() {
       )}
       <div className="bottomLeft">
         <div className={`score ${showControls ? 'score__withcontrols' : ''}`}>
-          <h3 className="score__title">LEVEL</h3>
+          {/* <h3 className="score__title">LEVEL</h3>
           <h1 className="score__number">{level + 1}</h1>
           <h3 className="score__title">KM/H</h3>
-          <h1 ref={speedRef} className="score__number">{currentSpeed}</h1>
+          <h1 ref={speedRef} className="score__number">{currentSpeed}</h1> */}
           <h3 className="score__title">SCORE</h3>
           <h1 ref={scoreRef} className="score__number">{currentScore}</h1>
         </div>

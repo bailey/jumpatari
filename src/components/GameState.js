@@ -51,14 +51,14 @@ export default function GameState() {
 
     if (ship.current) {
       // sets the score counter in the hud
-      mutation.score = Math.abs(ship.current.position.z) - 10
+      mutation.score = Math.abs(ship.current.position.y) - 10
 
       // optimization, instead of calculating this for all elements we do it once per frame here
-      mutation.shouldShiftItems = ship.current.position.z < -400 && ship.current.position.z < mutation.currentLevelLength - 400 && ship.current.position.z > mutation.currentLevelLength - 1000
+      mutation.shouldShiftItems = ship.current.position.y < -400 && ship.current.position.y < mutation.currentLevelLength - 400 && ship.current.position.y > mutation.currentLevelLength - 1000
     }
 
     if (gameStarted && mutation.gameOver) {
-      setScore(Math.abs(ship.current.position.z) - 10)
+      setScore(Math.abs(ship.current.position.y) - 10)
       setGameOver(true)
     }
   })
